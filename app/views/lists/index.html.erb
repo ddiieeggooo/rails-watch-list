@@ -1,7 +1,7 @@
 <h1>Movie Lists</h1>
 <ul>
 <% @lists.each do |list| %>
-<div class="card" link_to, list_path>
+<div class="card">
 <div class="card-body">
 <li> <%= list.id %> <%= link_to list.name, list_path(list.id) %></li>
 </div>
