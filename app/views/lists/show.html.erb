@@ -1,4 +1,4 @@
-<%= link_to "Back to Lists", lists_path %>
+<%= link_to "Back to Lists", root_path %>
 <%= simple_form_for [@list, @bookmark] do |f| %>
 <%= f.input :comment %>
 <%= f.association :movie, collection: Movie.all.order(:title), prompt: "Choose a movie" %>
